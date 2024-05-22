@@ -1,0 +1,6 @@
+CURSO(1,MATE);
+ESTUDIANTE(1,JOSE,1);
+Buscar_estudiante(1);
+Mostrar_estudiante();
+Eliminar_estudiante(1);
+Mostrar_estudiante();

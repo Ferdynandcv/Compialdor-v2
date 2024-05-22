@@ -1,0 +1,4 @@
+CURSO(1,MATE); *
+EST UDIANTE(2,PEDRO,1);
+Curso(3,estadistica);
+Estudiante(3,jo,2);
