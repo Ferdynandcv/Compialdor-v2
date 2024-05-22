@@ -4,7 +4,7 @@ from sintactico import ScriptInterpreter
 
 def main():
     interpreter = ScriptInterpreter()
-    filepath = "/home/ferdynandcv/Documents/Projects/Compilador/errores_lexicos.std"
+    filepath = "/home/ferdynandcv/Documents/Projects/Compilador/Scritpts/script.std"
     interpreter.load_script(filepath)
 
     # Interacción del usuario
