@@ -47,10 +47,15 @@ El archivo main.py buscar la variable filepath, cambiar por la ruta del archivo 
 Una vez que el script esté cargado, puedes interactuar con el intérprete a través de los comandos:
 
 set breakpoint <no_linea> : Asignar un punto de ruptura en una línea específica.
+  
 del breakpoint <no_linea> : Eliminar un punto de ruptura existente.
+
 print <ESTUDIANTE> : Imprimir la información de un estudiante específico.
+
 run : Continuar la ejecución hasta el próximo breakpoint o hasta el fin del script.
+
 step : Ejecutar el programa paso a paso, instrucción por instrucción.
+
 stop : Detener la ejecución del programa y salir.
 
 
