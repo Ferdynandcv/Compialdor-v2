@@ -1,6 +1,11 @@
 CURSO(1,MATE);
-ESTUDIANTE(1,JOSE,1);
-Buscar_estudiante(1);
+CURSO(2,DEV);
+CURSO(3,DATABASE);
+ESTUDIANTE(1,OSCARITO,1);
+ESTUDIANTE(2,MAX,2);
+ESTUDIANTE(3,EMILIO,3);
+Buscar_estudiante(2);
 Mostrar_estudiante();
 Eliminar_estudiante(1);
 Mostrar_estudiante();
+mostrar_informacion();
