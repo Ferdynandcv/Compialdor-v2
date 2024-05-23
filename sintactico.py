@@ -1,4 +1,4 @@
-# sintactico.py
+
 
 from lexico import tokenize, LexicalError, SyntaxError
 
@@ -45,7 +45,7 @@ class ScriptInterpreter:
             command_name, params = tokenize(command)
 
             # Verificación de errores sintácticos
-            if command_name not in ["CURSO", "ESTUDIANTE", "Buscar_estudiante", "Eliminar_estudiante", "Mostrar_estudiante", "mostrar_curso"]:
+            if command_name not in ["CURSO", "ESTUDIANTE", "Buscar_estudiante", "Eliminar_estudiante", "Mostrar_estudiante", "mostrar_curso", "mostrar_informacion"]:
                 raise SyntaxError(f"Comando '{command_name}' no reconocido.")
 
             if command_name == "CURSO":
@@ -105,6 +105,22 @@ class ScriptInterpreter:
                 else:
                     print("No hay cursos registrados.")
 
+            elif command_name == "mostrar_informacion":
+                if params:
+                    raise SyntaxError("mostrar_informacion no requiere parámetros.")
+                if self.students:
+                    print("Lista de estudiantes:")
+                    for student in self.students.values():
+                        print(student)
+                else:
+                    print("No hay estudiantes registrados.")
+                if self.courses:
+                    print("Lista de cursos:")
+                    for course in self.courses.values():
+                        print(course)
+                else:
+                    print("No hay cursos registrados.")
+
         except (LexicalError, SyntaxError) as e:
             print(f"Error: {e}")
 
@@ -148,4 +164,3 @@ class ScriptInterpreter:
             print(f"Breakpoint at line {line_number} deleted")
         else:
             print(f"No breakpoint found at line {line_number}")
-
