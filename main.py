@@ -9,7 +9,7 @@ def main():
 
     # Interacción del usuario
     while True:
-        user_input = input("Ingrese un comando: ")
+        user_input = input("Commands: ")
         parts = user_input.split()
         command_name = parts[0]
 
@@ -30,7 +30,7 @@ def main():
             interpreter.stop()
             break
         else:
-            print("Comando no reconocido.")
+            print("unrecognized command")
 
 if __name__ == "__main__":
     main()
