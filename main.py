@@ -21,7 +21,7 @@ def main():
             interpreter.delete_breakpoint(line_number)
         elif command_name == "print" and parts[1] == "ESTUDIANTE":
             student_id = int(parts[2])
-            interpreter.execute(f"Buscar_estudiante({student_id})")
+            interpreter.execute(f"Buscar_estudiante({student_id});")
         elif command_name == "run":
             interpreter.run()
         elif command_name == "step":
